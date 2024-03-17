@@ -24,7 +24,6 @@ const getPoster = (data) => {
 
 const getTitle = (data) => {
     const title = data.show.name;
-
     return title;
 }
 
@@ -43,10 +42,8 @@ const getTitleLink = (data) => {
 
 const getYear = (data) => {
     const year = !data.show.premiered ? 'unknown' : data.show.premiered.slice(0, 4);
-
     return year;
 }
-
 
 
 search.addEventListener('input', async function() {
